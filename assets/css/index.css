@@ -1,0 +1,28 @@
+
+.thumbnail{
+width: 25%;
+}
+body{
+font-family: "Inter",sans-serif;
+min-height: 100vh;
+}
+.linear-bg{
+background: linear-gradient(#0065d9 0%,#2775e3 46.8468%,#104bc7 100%);
+}
+.big-title{
+font-size: clamp(4.0625rem, 0.6503rem + 15.5987vw, 15.625rem);
+line-height: 0.8;
+}
+  
+@media(min-width:1536px){
+.thumbnail:not(.hovered){
+    width:10%;
+}
+.thumbnail.hovered{
+    width:70%;
+}
+.big-title{
+    font-size: clamp(1.125rem, -2.3944rem + 15.0162vw, 15.625rem);
+    line-height: 0.8;
+}
+}

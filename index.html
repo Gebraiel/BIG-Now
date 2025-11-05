@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BIG Now!</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1a11e246e6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+     
+      .container-big{
+        @apply container w-[90%] !max-w-[1920px] mx-auto 
+      }
+     
+    </style>
+    
+  </head>
+  <body>
+    <header class="absolute w-full z-1">
+      <div class="container-big">
+        <div class="flex justify-between py-5">
+          <a href="" class="text-white">BIG NOW </a>
+          <span class="year text-white"></span>
+          <div>
+            <button class="text-white cursor-pointer group capitalize text-2xl flex h-min items-center gap-2">
+              [ 
+              <div class="relative items-center overflow-hidden">
+                <span class="block duration-300 group-hover:-translate-y-full">Menu</span>
+                <span class="block w-full absolute duration-300 m-auto translate-y-full group-hover:-translate-y-full">
+                  +
+                </span>
+              </div>
+              ]
+            </button>
+            <nav class="hidden">
+              <ul>
+                <li>
+                  <a href="">About BIG </a>
+                </li>
+                <li>
+                  <a href="">Why BIG NOW</a>
+                </li>
+                <li>
+                  <a href="">How it works</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="h-screen relative linear-bg flex justify-center items-end"> 
+        <div class="absolute left-0 bottom-0 w-full h-full flex justify-center -z-0 avatar-background" style="background-image:linear-gradient(black 50%, transparent top) "><img class="w-full h-full object-cover" src="assets/images/Person-Background.avif" alt="Avatar"></div>
+        <div class="container-big md:h-auto h-screen grid grid-rows-3 grid-cols-1 justify-between z-1 relative p-5">
+        
+          <div class="flex md:flex-row flex-col-reverse md:justify-between justify-center  2xl:items-start md:items-center items-start row-span-2 ">
+            <div class="md:max-w-lg">
+              <p class="top-content sm:text-6xl text-4xl  text-white font-bold">Where AI meets <span class="italic">Human Creativity</span>
+              </p>
+            </div>
+            <div>
+              <button class="text-white group capitalize text-2xl flex h-min items-center gap-2 top-content">
+                <div class="relative overflow-hidden">
+                  <span class="2xl:block hidden duration-300 2xl:group-hover:-translate-y-full">follow us</span>
+                  <span class="block 2xl:absolute duration-300 2xl:translate-y-full 2xl:group-hover:-translate-y-full">
+                    <ul class="flex gap-3">
+                      <li>
+                        <a href="">In</a>
+                      </li>
+                      <li>
+                        <a href="">Fb</a>
+                      </li>
+                      <li>
+                        <a href="">Tx</a>
+                      </li>
+                      <li>
+                        <a href="">Yt</a>
+                      </li>
+                    </ul>
+                  </span>
+                </div>
+                <span class="2xl:block hidden text-xl"><i class="fa-solid fa-share-nodes"></i></span>
+              </button>
+            </div>
+          </div>
+          <div class="flex 2xl:flex-row flex-col 2xl:justify-between justify-end 2xl:items-center items-end gap-5 bottom-content ">
+            <h1 class="big-title 2xl:w-[70%] w-full text-white font-bold ">BIG NOW</h1>
+            <div class="flex 2xl:w-[30%] w-full max-w-lg gap-5">
+              <div class="thumbnail 2xl:aspect-auto aspect-video 2xl:h-52 h-auto rounded-lg  duration-500 bg-cover bg-center hovered" style="background-image:url(assets/images/Thumbnail-1.avif)" > </div>
+              <div class="thumbnail 2xl:aspect-auto aspect-video 2xl:h-52 h-auto rounded-lg  duration-500 bg-cover bg-center " style="background-image:url(assets/images/Thumbnail-2.avif)"> </div>
+              <div class="thumbnail 2xl:aspect-auto aspect-video 2xl:h-52 h-auto rounded-lg  duration-500 bg-cover bg-center " style="background-image:url(assets/images/Thumbnail-3.avif)"> </div>
+              <div class="thumbnail 2xl:aspect-auto aspect-video 2xl:h-52 h-auto rounded-lg  duration-500 bg-cover bg-center " style="background-image:url(assets/images/Thumbnail-4.avif)"> </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
