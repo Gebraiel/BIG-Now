@@ -50,7 +50,7 @@ let tl = gsap.timeline({
       trigger: ".sliding-wrapper",
       start: "top top",
       end: "+=3000",
-      scrub: true,
+      scrub: 1,
       pin: ".sliding-section",
     }
   });
