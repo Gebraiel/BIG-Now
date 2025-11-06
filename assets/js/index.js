@@ -18,6 +18,7 @@ thumbnails.forEach((thumb)=>{
 })
 
 //gsap animation 
+gsap.registerPlugin(ScrollTrigger)
 
 const heroTimeLine = gsap.timeline();
 heroTimeLine.from("header",{
@@ -28,13 +29,14 @@ heroTimeLine.from(".top-content",{
     opacity:0,
     x:-100,
     duration:0.6,
-    
+    scrollTrigger:".top-content"
 })
 heroTimeLine.from(".bottom-content",{
     opacity:0,
     yPercent:100,
     duration:0.6,
-    ease:"power1.out"
+    ease:"power1.out",
+    scrollTrigger:".bottom-content"
 })
 
 heroTimeLine.from(".avatar-background",{
@@ -44,7 +46,6 @@ heroTimeLine.from(".avatar-background",{
     duration:1,
     ease:"power1.out"
 })
-gsap.registerPlugin(ScrollTrigger)
 let tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".sliding-wrapper",
