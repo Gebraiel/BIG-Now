@@ -45,13 +45,15 @@ heroTimeLine.from(".avatar-background",{
     ease:"power1.out"
 })
 gsap.registerPlugin(ScrollTrigger)
-gsap.to(".sliding", {
-    xPercent: -100,
+let tl = gsap.timeline({
     scrollTrigger: {
-      trigger: ".sliding-wrapper", // بدل section
+      trigger: ".sliding-wrapper",
       start: "top top",
-      end: "+=1500",
+      end: "+=3000",
       scrub: true,
       pin: ".sliding-section",
     }
   });
+  
+  tl.to(".to-left", { xPercent: -70 })
+    .to(".to-right", { xPercent: 70 }, "<"); // "<" = يبدأوا مع بعض
