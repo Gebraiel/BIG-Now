@@ -26,7 +26,7 @@ heroTimeLine.from("header",{
 })
 heroTimeLine.from(".top-content",{
     opacity:0,
-    xPercenet:100,
+    x:-100,
     duration:0.6,
     
 })
@@ -44,3 +44,14 @@ heroTimeLine.from(".avatar-background",{
     duration:1,
     ease:"power1.out"
 })
+gsap.registerPlugin(ScrollTrigger)
+gsap.to(".sliding", {
+    xPercent: -100,
+    scrollTrigger: {
+      trigger: ".sliding-wrapper", // بدل section
+      start: "top top",
+      end: "+=1500",
+      scrub: true,
+      pin: ".sliding-section",
+    }
+  });

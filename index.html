@@ -18,7 +18,7 @@
       .container-big{
         @apply container w-[90%] !max-w-[1920px] mx-auto 
       }
-     
+      
     </style>
     
   </head>
@@ -57,7 +57,72 @@
       </div>
     </header>
     <main>
-      <section class="h-screen relative linear-bg flex justify-center items-end"> 
+      <section class="h-screen relative linear-bg flex justify-center items-end overflow-hidden"> 
+        <div class="absolute left-0 bottom-0 w-full h-full flex justify-center -z-0 avatar-background" style="background-image:linear-gradient(black 50%, transparent top) "><img class="w-full h-full object-cover" src="assets/images/Person-Background.avif" alt="Avatar"></div>
+        <div class="container-big md:h-auto h-screen grid grid-rows-3 grid-cols-1 justify-between z-1 relative p-5">
+        
+          <div class="flex md:flex-row flex-col-reverse md:justify-between justify-center  2xl:items-start md:items-center items-start row-span-2 ">
+            <div class="md:max-w-lg">
+              <p class="top-content sm:text-6xl text-4xl  text-white font-bold">Where AI meets <span class="italic">Human Creativity</span>
+              </p>
+            </div>
+            <div>
+              <button class="text-white group capitalize text-2xl flex h-min items-center gap-2 top-content">
+                <div class="relative overflow-hidden">
+                  <span class="2xl:block hidden duration-300 2xl:group-hover:-translate-y-full">follow us</span>
+                  <span class="block 2xl:absolute duration-300 2xl:translate-y-full 2xl:group-hover:-translate-y-full">
+                    <ul class="flex gap-3">
+                      <li>
+                        <a href="">In</a>
+                      </li>
+                      <li>
+                        <a href="">Fb</a>
+                      </li>
+                      <li>
+                        <a href="">Tx</a>
+                      </li>
+                      <li>
+                        <a href="">Yt</a>
+                      </li>
+                    </ul>
+                  </span>
+                </div>
+                <span class="2xl:block hidden text-xl"><i class="fa-solid fa-share-nodes"></i></span>
+              </button>
+            </div>
+          </div>
+          <div class="flex 2xl:flex-row flex-col 2xl:justify-between justify-end 2xl:items-center items-end gap-5 bottom-content ">
+            <h1 class="big-title 2xl:w-[70%] w-full text-white font-bold ">BIG NOW</h1>
+            <div class="flex 2xl:w-[30%] w-full max-w-lg gap-5">
+              <div class="thumbnail 2xl:aspect-auto aspect-video 2xl:h-52 h-auto rounded-lg  duration-500 bg-cover bg-center hovered" style="background-image:url(assets/images/Thumbnail-1.avif)" > </div>
+              <div class="thumbnail 2xl:aspect-auto aspect-video 2xl:h-52 h-auto rounded-lg  duration-500 bg-cover bg-center " style="background-image:url(assets/images/Thumbnail-2.avif)"> </div>
+              <div class="thumbnail 2xl:aspect-auto aspect-video 2xl:h-52 h-auto rounded-lg  duration-500 bg-cover bg-center " style="background-image:url(assets/images/Thumbnail-3.avif)"> </div>
+              <div class="thumbnail 2xl:aspect-auto aspect-video 2xl:h-52 h-auto rounded-lg  duration-500 bg-cover bg-center " style="background-image:url(assets/images/Thumbnail-4.avif)"> </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      <section class="h-screen sliding-section overflow-hidden flex justify-center items-center">
+        <div class="sliding-wrapper h-full w-full flex justify-center items-center flex-col gap-5">
+          <div class="flex items-center gap-5 sliding">
+            
+            <img class="w-[200px] object-cover object-center aspect-video rounded-xl" src="assets/images/Advantages/Advantages-1.avif" alt="Advantages-1">
+            <strong class="text-9xl whitespace-nowrap uppercase">Competitive Pricing</strong>
+            <img class="w-[200px] object-cover object-center aspect-video rounded-xl" src="assets/images/Advantages/Advantages-2.avif" alt="Advantages-1">
+            <strong class="text-9xl whitespace-nowrap uppercase">Zero Errors</strong>
+          </div>
+         <div class="flex items-center gap-5 sliding">
+          <img class="w-[200px] object-cover object-center aspect-video rounded-xl" src="assets/images/Advantages/Advantages-3.avif" alt="Advantages-1">
+          <strong class="text-9xl whitespace-nowrap uppercase">Fast Delivery</strong>
+          <img class="w-[200px] object-cover object-center aspect-video rounded-xl" src="assets/images/Advantages/Advantages-4.avif" alt="Advantages-1">
+          <strong class="text-9xl whitespace-nowrap uppercase">Top-Tier Quality</strong>
+          <img class="w-[200px] object-cover object-center aspect-video rounded-xl" src="assets/images/Advantages/Advantages-1.avif" alt="Advantages-1">
+          <strong class="text-9xl whitespace-nowrap uppercase">Top-Tier Quality</strong>
+       </div>
+        </div>
+      </section>
+      <section class="h-screen relative linear-bg flex justify-center items-end overflow-hidden"> 
         <div class="absolute left-0 bottom-0 w-full h-full flex justify-center -z-0 avatar-background" style="background-image:linear-gradient(black 50%, transparent top) "><img class="w-full h-full object-cover" src="assets/images/Person-Background.avif" alt="Avatar"></div>
         <div class="container-big md:h-auto h-screen grid grid-rows-3 grid-cols-1 justify-between z-1 relative p-5">
         
@@ -106,6 +171,7 @@
     </main>
     <footer></footer>
     <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
     <script src="assets/js/index.js"></script>
   </body>
 </html>
