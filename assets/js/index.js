@@ -57,4 +57,20 @@ let tl = gsap.timeline({
   });
   
   tl.to(".to-left", { xPercent: -70 })
-    .to(".to-right", { xPercent: 70 }, "<"); // "<" = يبدأوا مع بعض
+    .to(".to-right", { xPercent: 70 }, "<"); 
+
+const cards = gsap.utils.toArray(".services-section .service");
+
+gsap.to(cards, {
+  yPercent: -100 * (cards.length - 1), // كل كارت يطلع لأعلى بالتتابع
+  
+  scrollTrigger: {
+    trigger: ".services-section",
+    start: "top top",
+    end: `+=${cards.length * 100 }%`, // طول السكرول يعتمد على عدد الكروت
+    pin: true,
+    scrub:true,
+    anticipatePin: 1, // ✅ يخلي التثبيت ناعم
+    pinSpacing: true, // ✅ مهم لتفادي القفزة
+  },
+});
