@@ -58,17 +58,3 @@ let tl = gsap.timeline({
   
   tl.to(".to-left", { xPercent: -70 })
     .to(".to-right", { xPercent: 70 }, "<"); 
-const cards = gsap.utils.toArray(".services-section .service");
-const servicesScroller = document.querySelector('.servcies-scroller');
-gsap.to(servicesScroller, {
-  yPercent: -100 * (cards.length - 1), // يتحرك بمقدار عدد الكروت
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".services-section",
-    start: "top top",
-    end: `+=${servicesScroller.offsetHeight}`, // طول السكرول يعتمد على عدد الكروت
-    pin: true,
-    scrub:true,
-    anticipatePin: 1, // ✅ يخلي التثبيت ناعم
-  },
-});
