@@ -22,21 +22,28 @@ gsap.registerPlugin(ScrollTrigger)
 
 const heroTimeLine = gsap.timeline();
 heroTimeLine.from("header",{
-    yPercent:-100,
+    y:-100,
     opacity:0
 })
-heroTimeLine.from(".top-content",{
+heroTimeLine.from(".fade-in-left",{
     opacity:0,
     x:-100,
     duration:0.6,
-    scrollTrigger:".top-content"
+    scrollTrigger:".fade-in-left"
 })
-heroTimeLine.from(".bottom-content",{
+heroTimeLine.from(".fade-in-right",{
     opacity:0,
-    yPercent:100,
+    x:100,
     duration:0.6,
     ease:"power1.out",
-    scrollTrigger:".bottom-content"
+    scrollTrigger:".fade-in-right"
+})
+heroTimeLine.from(".fade-in-top",{
+    opacity:0,
+    y:100,
+    duration:0.6,
+    ease:"power1.out",
+    scrollTrigger:".fade-in-right"
 })
 
 heroTimeLine.from(".avatar-background",{
@@ -58,3 +65,10 @@ let tl = gsap.timeline({
   
   tl.to(".to-left", { xPercent: -70 })
     .to(".to-right", { xPercent: 70 }, "<"); 
+
+  gsap.from(".fade-in",{
+    opacity:0,
+    duration:0.5,
+    stagger:0.2,
+    scrollTrigger:".advantage"
+  })
