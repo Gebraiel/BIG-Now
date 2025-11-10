@@ -1,5 +1,5 @@
 // add current year 
-document.querySelector('header .year').innerText = `@${new Date().getFullYear()}`;
+document.querySelectorAll('.year').forEach((year)=>year.innerText = new Date().getFullYear() );
 
 //thumbnail hover 
 
