@@ -31,15 +31,15 @@
       }
     </style>
   </head>
-  <body>
-    <header class="absolute w-full z-1">
+  <body class="overflow-x-hidden">
+    <header class="absolute w-full z-10">
       <div class="container-big">
-        <div class="flex justify-between py-5">
-          <a href="" class="text-white">BIG NOW </a>
-          <div class="text-white">@<span class="year "></span></div>
-          <div>
+        <div class="header-wrapper flex justify-between items-center py-5 z-1 relative">
+          <a href=""class="text-3xl" >BIG NOW </a>
+          <div class="sm:block hidden">@<span class="year "></span></div>
+          <div class="relative" >
             <button
-              class="text-white cursor-pointer group capitalize text-2xl flex h-min items-center gap-2"
+              class="cursor-pointer group capitalize text-lg h-min items-center gap-2 menu-button open-button"
             >
               [
               <div class="relative items-center overflow-hidden">
@@ -54,22 +54,85 @@
               </div>
               ]
             </button>
-            <nav class="hidden">
-              <ul>
-                <li>
-                  <a href="">About BIG </a>
-                </li>
-                <li>
-                  <a href="">Why BIG NOW</a>
-                </li>
-                <li>
-                  <a href="">How it works</a>
-                </li>
-              </ul>
-            </nav>
+            <button
+              class="cursor-pointer group capitalize text-lg flex h-min items-center gap-2 menu-button close-button"
+            >
+              [ x ]
+            </button>
+            
           </div>
+         
         </div>
       </div>
+      <nav class="absolute w-screen h-screen bg-white left-0 top-0 flex justify-center items-center text-center">
+        <ul class="space-y-3">
+          <li class="sm:text-6xl text-3xl font-bold uppercase ">
+            <div
+              class="cursor-pointer group flex h-min items-center gap-2"
+            >
+              <div class="relative items-center overflow-hidden w-full">
+                <a class="block duration-300 group-hover:-translate-y-full"
+                  >About Big</a
+                >
+                <a
+                  class="block w-full absolute duration-300 m-auto translate-y-full group-hover:-translate-y-full"
+                >
+                About Big
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="sm:text-6xl text-3xl font-bold uppercase ">
+            <div
+              class="cursor-pointer group flex h-min items-center gap-2"
+            >
+              <div class="relative items-center overflow-hidden w-full">
+                <a class="block duration-300 group-hover:-translate-y-full"
+                  >Services</a
+                >
+                <a
+                  class="block w-full absolute duration-300 m-auto translate-y-full group-hover:-translate-y-full"
+                >
+                Services
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="sm:text-6xl text-3xl font-bold uppercase ">
+            <div
+              class="cursor-pointer group flex h-min items-center gap-2"
+            >
+              <div class="relative items-center overflow-hidden w-full">
+                <a class="block duration-300 group-hover:-translate-y-full"
+                  >Why Big</a
+                >
+                <a
+                  class="block w-full absolute duration-300 m-auto translate-y-full group-hover:-translate-y-full"
+                >
+                Why Big
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="sm:text-6xl text-3xl font-bold uppercase ">
+            <div
+              class="cursor-pointer group flex h-min items-center gap-2"
+            >
+              <div class="relative items-center overflow-hidden w-full">
+                <a class="block duration-300 group-hover:-translate-y-full"
+                  >Testimonials</a
+                >
+                <a
+                  class="block w-full absolute duration-300 m-auto translate-y-full group-hover:-translate-y-full"
+                >
+                Testimonials
+                </a>
+              </div>
+            </div>
+          </li>
+      
+        </ul>
+      </nav>
     </header>
     <main>
       <section
@@ -266,6 +329,7 @@
           </div>
         </div>
       </section>
+
       <section class="py-20">
         <div class="container-big">
           <div class="flex flex-col items-center gap-3">
@@ -279,7 +343,7 @@
         </div>
 
         <div class="min-h-screen py-10 mt-10 ">
-          <div class="w-full h-full white-linear-bg sticky top-0 left-0 -z-0"> 
+          <div class="w-full h-full sticky top-0 left-0 -z-0"> 
             <div class="absolute w-full h-full left-0 top-0">
                 <img class="w-screen h-screen object-cover" src="assets/images/Services/section-bg.avif" alt="">
             </div>
@@ -477,32 +541,26 @@
           </div>
         </div>
       </section>
-      
-      <section class="z-1 relative bg-white">
-        <div class="container-big">
+      <section class="bg-white z-1 relative py-20 white-linear-bg" >
+        <div class="container-big overflow-hidden ">
           <div class="grid md:grid-cols-2 md:grid-rows-1 grid-cols-1 grid-rows-2 mb-20 items-center">
             <div class="fade-in-left">
-              <h2 class="font-bold text-5xl">AI + Humans :<br>
-                 The Perfect Balance
+              <h2 class="font-bold text-5xl">Client Testimonials
+
               </h2>
             </div>
             <div class="fade-in-right">
-              <p>At BIG NOW, we use AI to analyze, create, and optimize — but we never let the machines decide alone.
-                Every output passes through expert eyes to ensure creativity, context, and emotion stay intact.</p>
+              <p>Bring your ideas to life — faster, smarter, and more accurately than ever. Start your AI-powered project today with BIG NOW.
+
+
+              </p>
             </div>
           </div>
-          
-            <img class="w-full max-h-[800px] object-cover rounded-xl" src="assets/images/banner.avif" alt="Banner">
-
-        </div>
-      </section>
-      <section class="">
-        <div class="container-big overflow-hidden ">
-          <div class="grid 2xl:grid-cols-3 2xl:grid-rows-1 grid-cols-1 grid-rows-[repeat(2,auto)] gap-5 2xl:w-3/4 w-full m-auto relative overflow-hidden">
-            <div class="bg-blue-600 p-5 flex justify-center items-center 2xl:aspect-square h-[400px] rounded-3xl z-1 relative">
+          <div class="grid 2xl:grid-cols-3 2xl:grid-rows-1 grid-cols-1 grid-rows-[repeat(2,auto)] gap-5 m-auto relative overflow-hidden">
+            <div class="bg-blue-600 p-5 flex justify-center items-center 2xl:aspect-square w-full max-h-[500px] rounded-3xl z-1 relative">
               <div class="text-white text-center flex flex-col gap-3">
                 <b class="text-4xl">BIG NOW </b>
-                <p class="text-3xl">Bring your ideas to life — faster, smarter, and more accurately than ever.</p>
+                <p class="sm:text-3xl text-lg">Bring your ideas to life — faster, smarter, and more accurately than ever.</p>
                 <ul class="flex gap-2 justify-center">
                   <li><i class="fa-solid fa-star"></i></li>
                   <li><i class="fa-solid fa-star"></i></li>
@@ -619,6 +677,25 @@
             
         </div>
       </section>
+      <section class="z-1 relative bg-white">
+        <div class="container-big">
+          <div class="grid md:grid-cols-2 md:grid-rows-1 grid-cols-1 grid-rows-2 mb-20 items-center">
+            <div class="fade-in-left">
+              <h2 class="font-bold text-5xl">AI + Humans :<br>
+                 The Perfect Balance
+              </h2>
+            </div>
+            <div class="fade-in-right">
+              <p>At BIG NOW, we use AI to analyze, create, and optimize — but we never let the machines decide alone.
+                Every output passes through expert eyes to ensure creativity, context, and emotion stay intact.</p>
+            </div>
+          </div>
+          
+            <img class="w-full max-h-[800px] object-cover rounded-xl" src="assets/images/banner.avif" alt="Banner">
+
+        </div>
+      </section>
+      
     </main>
     <footer class="bg-gray px-5">
         <div class="pt-20 pb-16">
@@ -672,6 +749,23 @@
                   class="block w-full absolute duration-300 m-auto translate-y-full group-hover:-translate-y-full"
                 >
                 Why Big
+                </span>
+              </div>
+              
+            </a>
+            </li>
+            <li>
+              <a
+              class="text-black cursor-pointer group capitalize text-sm flex h-min items-center gap-2">
+            
+              <div class="relative items-center overflow-hidden">
+                <span class="block duration-300 group-hover:-translate-y-full"
+                  >Testimonials</span
+                >
+                <span
+                  class="block w-full absolute duration-300 m-auto translate-y-full group-hover:-translate-y-full"
+                >
+                Testimonials
                 </span>
               </div>
               

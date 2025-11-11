@@ -1,6 +1,17 @@
 // add current year 
 document.querySelectorAll('.year').forEach((year)=>year.innerText = new Date().getFullYear() );
 
+//menu button
+const openButton = document.querySelector('.menu-button.open-button');
+const closeButton = document.querySelector('.menu-button.close-button');
+const header = document.querySelector('header');
+openButton.addEventListener("click",()=>{
+  header.classList.add('open');
+})
+closeButton.addEventListener("click",()=>{
+  header.classList.remove('open');
+})
+
 //thumbnail hover 
 
 let thumbnails = document.querySelectorAll('.thumbnail');
