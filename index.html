@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/1a11e246e6.js"
       crossorigin="anonymous"
@@ -494,8 +498,8 @@
       </section>
       <section class="">
         <div class="container-big overflow-hidden ">
-          <div class="grid grid-cols-3 w-3/4 m-auto relative">
-            <div class="bg-blue-600 p-5 flex justify-center items-center aspect-square rounded-2xl z-1 relative">
+          <div class="grid 2xl:grid-cols-3 2xl:grid-rows-1 grid-cols-1 grid-rows-[repeat(2,auto)] gap-5 2xl:w-3/4 w-full m-auto relative overflow-hidden">
+            <div class="bg-blue-600 p-5 flex justify-center items-center 2xl:aspect-square h-[400px] rounded-3xl z-1 relative">
               <div class="text-white text-center flex flex-col gap-3">
                 <b class="text-4xl">BIG NOW </b>
                 <p class="text-3xl">Bring your ideas to life — faster, smarter, and more accurately than ever.</p>
@@ -508,120 +512,111 @@
                 </ul>
               </div>
             </div>
-            <div class="slider col-span-2 flex flex-row overflow-x-auto scrollbar-hidden absolute w-full h-full left-0 ">
-             <div class="track gap-3  flex h-full w-full flex-shrink-0">
-              <div class="p-6 bg-gray rounded-xl flex flex-col justify-between w-1/4 max-w-[500px] flex-shrink-0 testimonial">
-                <div>
-                  <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
-                  <p class="text-xl font-medium mt-5">"The speed and quality shocked us. It felt like a full agency working overnight."</p>
-                </div>
-                <div class="flex items-center gap-3">
-                  <div class="w-10 aspect-square rounded-full"><img class="rounded-full" src="assets/images/Testimonials/avatar.avif" alt="avatar"></div>
-                  <div>
-                    <b>Clinet Name</b>
-                    <p>Client Position</p>
-                  </div>
-                </div>
-              </div>
-              <div class="p-6 bg-gray rounded-xl flex flex-col justify-between w-1/4 max-w-[500px] flex-shrink-0 testimonial">
-                <div>
-                  <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
-                  <p class="text-xl font-medium mt-5">"The speed and quality shocked us. It felt like a full agency working overnight."</p>
-                </div>
-                <div class="flex items-center gap-3">
-                  <div class="w-10 aspect-square rounded-full"><img class="rounded-full" src="assets/images/Testimonials/avatar.avif" alt="avatar"></div>
-                  <div>
-                    <b>Clinet Name</b>
-                    <p>Client Position</p>
-                  </div>
-                </div>
-              </div>
-              <div class="p-6 bg-gray rounded-xl flex flex-col justify-between w-1/4 max-w-[500px] flex-shrink-0 testimonial">
-                <div>
-                  <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
-                  <p class="text-xl font-medium mt-5">"The speed and quality shocked us. It felt like a full agency working overnight."</p>
-                </div>
-                <div class="flex items-center gap-3">
-                  <div class="w-10 aspect-square rounded-full"><img class="rounded-full" src="assets/images/Testimonials/avatar.avif" alt="avatar"></div>
-                  <div>
-                    <b>Clinet Name</b>
-                    <p>Client Position</p>
-                  </div>
-                </div>
-              </div>
-              <div class="p-6 bg-gray rounded-xl flex flex-col justify-between w-1/4 max-w-[500px] flex-shrink-0 testimonial">
-                <div>
-                  <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
-                  <p class="text-xl font-medium mt-5">"The speed and quality shocked us. It felt like a full agency working overnight."</p>
-                </div>
-                <div class="flex items-center gap-3">
-                  <div class="w-10 aspect-square rounded-full"><img class="rounded-full" src="assets/images/Testimonials/avatar.avif" alt="avatar"></div>
-                  <div>
-                    <b>Clinet Name</b>
-                    <p>Client Position</p>
-                  </div>
-                </div>
-              </div>
+            <div class="marquee col-span-2 2xl:h-full h-[500px] ">
+              <div class="swiper  w-screen h-full overflow-hidden py-10 ">
+                <div class="swiper-wrapper">
               
+                  <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between  max-w-[500px] w-full flex-shrink-0 testimonial swiper-slide">
+                    <div>
+                      <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                      <p class="text-xl font-medium mt-5">"The speed and quality shocked us. It felt like a full agency working overnight."</p>
+                    </div>
+                    <div class="flex items-center gap-3 mt-5">
+                      <div class="w-10 aspect-square rounded-full overflow-hidden">
+                        <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                      </div>
+                      <div>
+                        <b>Client Name</b>
+                        <p>Client Position</p>
+                      </div>
+                    </div>
+                  </div>
               
+                  <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between  max-w-[500px] w-full flex-shrink-0 testimonial swiper-slide">
+                    <div>
+                      <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                      <p class="text-xl font-medium mt-5">"They delivered a full content plan in 3 days — ready to go live instantly."</p>
+                    </div>
+                    <div class="flex items-center gap-3 mt-5">
+                      <div class="w-10 aspect-square rounded-full overflow-hidden">
+                        <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                      </div>
+                      <div>
+                        <b>Client Name</b>
+                        <p>Client Position</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div aria-hidden class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between  max-w-[500px] w-full flex-shrink-0 testimonial swiper-slide">
+                    <div>
+                      <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                      <p class="text-xl font-medium mt-5">"The speed and quality shocked us. It felt like a full agency working overnight."</p>
+                    </div>
+                    <div class="flex items-center gap-3 mt-5">
+                      <div class="w-10 aspect-square rounded-full overflow-hidden">
+                        <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                      </div>
+                      <div>
+                        <b>Client Name</b>
+                        <p>Client Position</p>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div aria-hidden class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between  max-w-[500px] w-full flex-shrink-0 testimonial swiper-slide">
+                    <div>
+                      <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                      <p class="text-xl font-medium mt-5">"They delivered a full content plan in 3 days — ready to go live instantly."</p>
+                    </div>
+                    <div class="flex items-center gap-3 mt-5">
+                      <div class="w-10 aspect-square rounded-full overflow-hidden">
+                        <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                      </div>
+                      <div>
+                        <b>Client Name</b>
+                        <p>Client Position</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div aria-hidden class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between  max-w-[500px] w-full flex-shrink-0 testimonial swiper-slide">
+                    <div>
+                      <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                      <p class="text-xl font-medium mt-5">"The speed and quality shocked us. It felt like a full agency working overnight."</p>
+                    </div>
+                    <div class="flex items-center gap-3 mt-5">
+                      <div class="w-10 aspect-square rounded-full overflow-hidden">
+                        <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                      </div>
+                      <div>
+                        <b>Client Name</b>
+                        <p>Client Position</p>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div aria-hidden class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between  max-w-[500px] w-full flex-shrink-0 testimonial swiper-slide">
+                    <div>
+                      <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                      <p class="text-xl font-medium mt-5">"They delivered a full content plan in 3 days — ready to go live instantly."</p>
+                    </div>
+                    <div class="flex items-center gap-3 mt-5">
+                      <div class="w-10 aspect-square rounded-full overflow-hidden">
+                        <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                      </div>
+                      <div>
+                        <b>Client Name</b>
+                        <p>Client Position</p>
+                      </div>
+                    </div>
+                  </div>
+  
+              
+                </div>
+              </div>
             </div>
-             <div class="track gap-3 pl-12 flex h-full w-full flex-shrink-0">
-              <div class="p-6 bg-gray rounded-xl flex flex-col justify-between w-1/4 max-w-[500px] flex-shrink-0 testimonial">
-                <div>
-                  <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
-                  <p class="text-xl font-medium mt-5">"The speed and quality shocked us. It felt like a full agency working overnight."</p>
-                </div>
-                <div class="flex items-center gap-3">
-                  <div class="w-10 aspect-square rounded-full"><img class="rounded-full" src="assets/images/Testimonials/avatar.avif" alt="avatar"></div>
-                  <div>
-                    <b>Clinet Name</b>
-                    <p>Client Position</p>
-                  </div>
-                </div>
-              </div>
-              <div class="p-6 bg-gray rounded-xl flex flex-col justify-between w-1/4 max-w-[500px] flex-shrink-0 testimonial">
-                <div>
-                  <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
-                  <p class="text-xl font-medium mt-5">"The speed and quality shocked us. It felt like a full agency working overnight."</p>
-                </div>
-                <div class="flex items-center gap-3">
-                  <div class="w-10 aspect-square rounded-full"><img class="rounded-full" src="assets/images/Testimonials/avatar.avif" alt="avatar"></div>
-                  <div>
-                    <b>Clinet Name</b>
-                    <p>Client Position</p>
-                  </div>
-                </div>
-              </div>
-              <div class="p-6 bg-gray rounded-xl flex flex-col justify-between w-1/4 max-w-[500px] flex-shrink-0 testimonial">
-                <div>
-                  <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
-                  <p class="text-xl font-medium mt-5">"The speed and quality shocked us. It felt like a full agency working overnight."</p>
-                </div>
-                <div class="flex items-center gap-3">
-                  <div class="w-10 aspect-square rounded-full"><img class="rounded-full" src="assets/images/Testimonials/avatar.avif" alt="avatar"></div>
-                  <div>
-                    <b>Clinet Name</b>
-                    <p>Client Position</p>
-                  </div>
-                </div>
-              </div>
-              <div class="p-6 bg-gray rounded-xl flex flex-col justify-between w-1/4 max-w-[500px] flex-shrink-0 testimonial">
-                <div>
-                  <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
-                  <p class="text-xl font-medium mt-5">"The speed and quality shocked us. It felt like a full agency working overnight."</p>
-                </div>
-                <div class="flex items-center gap-3">
-                  <div class="w-10 aspect-square rounded-full"><img class="rounded-full" src="assets/images/Testimonials/avatar.avif" alt="avatar"></div>
-                  <div>
-                    <b>Clinet Name</b>
-                    <p>Client Position</p>
-                  </div>
-                </div>
-              </div>
-              
-              
-            </div>
-          </div>
+            
+            
+            
         </div>
       </section>
     </main>
@@ -690,8 +685,36 @@
           <p>© <span class="year"></span> RASANS®. All rights reserved.</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
     <script src="assets/js/gsap.min.js"></script>
     <script src="assets/js/ScrollTrigger.min.js"></script>
     <script src="assets/js/index.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () =>{
+      const swiper = new Swiper(".marquee .swiper", {
+        slidesPerView: "2",
+        allowTouchMove: false, // يعطل السحب اليدوي لو مش محتاجه
+        spaceBetween: 12,
+        loop: true,
+        speed: 20000,
+
+        autoplay: {
+          delay: 1,
+          disableOnInteraction: false,
+        },
+        
+        breakpoints:{
+          0: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          
+        }
+      });
+      console.log("swiper init", swiper);
+
+    })
+      // debug: لو عايز تتأكد إن الانستنس اتعمل
+
+    </script>
   </body>
 </html>

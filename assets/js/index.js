@@ -72,11 +72,3 @@ let tl = gsap.timeline({
     stagger:0.2,
     scrollTrigger:".advantage"
   })
-
-  
-  gsap.to(".track", {
-    x: "-100%", // لو عندك 2x من العناصر يبقى 50%
-    duration: 50,
-    ease: "linear",
-    repeat: -1,
-  });
