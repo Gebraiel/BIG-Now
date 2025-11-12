@@ -7,14 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-    />
+
     <script
       src="https://kit.fontawesome.com/1a11e246e6.js"
       crossorigin="anonymous"
@@ -29,6 +22,7 @@
       .container-big {
         @apply container  !max-w-[1920px] mx-auto px-5 py-10;
       }
+
     </style>
   </head>
   <body class="overflow-x-hidden">
@@ -570,107 +564,143 @@
                 </ul>
               </div>
             </div>
-            <div class="marquee col-span-2 2xl:h-full h-[500px] ">
-              <div class="swiper  w-screen h-full overflow-hidden py-10 ">
-                <div class="swiper-wrapper">
-              
-                  <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between  max-w-[500px] w-full flex-shrink-0 testimonial swiper-slide">
-                    <div>
-                      <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
-                      <p class="text-xl font-medium mt-5">"The speed and quality shocked us. It felt like a full agency working overnight."</p>
+            <div class="col-span-2 2xl:h-full h-[500px] ">
+              <div class="marquee overflow-hidden flex gap-3 h-full">
+                <div class="track flex items-center justify-center gap-3">
+                    <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between w-[500px] h-full   ">
+                        <div>
+                            <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                            <p class="text-xl font-medium mt-5">"The speed and quality shocked us. It felt like a full agency working overnight."</p>
+                        </div>
+                        <div class="flex items-center gap-3 mt-5">
+                            <div class="w-10 aspect-square rounded-full overflow-hidden">
+                            <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                            </div>
+                            <div>
+                            <b>Client Name</b>
+                            <p>Client Position</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex items-center gap-3 mt-5">
-                      <div class="w-10 aspect-square rounded-full overflow-hidden">
-                        <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
-                      </div>
-                      <div>
-                        <b>Client Name</b>
-                        <p>Client Position</p>
-                      </div>
+                    <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between w-[500px] h-full   ">
+                        <div>
+                            <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                            <p class="text-xl font-medium mt-5">"They delivered a full content plan in 3 days — ready to go live instantly."</p>
+                        </div>
+                        <div class="flex items-center gap-3 mt-5">
+                            <div class="w-10 aspect-square rounded-full overflow-hidden">
+                            <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                            </div>
+                            <div>
+                            <b>Client Name</b>
+                            <p>Client Position</p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-              
-                  <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between  max-w-[500px] w-full flex-shrink-0 testimonial swiper-slide">
-                    <div>
-                      <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
-                      <p class="text-xl font-medium mt-5">"They delivered a full content plan in 3 days — ready to go live instantly."</p>
+                    <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between w-[500px] h-full   ">
+                        <div>
+                            <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                            <p class="text-xl font-medium mt-5">"The speed and quality shocked us. It felt like a full agency working overnight."</p>
+                        </div>
+                        <div class="flex items-center gap-3 mt-5">
+                            <div class="w-10 aspect-square rounded-full overflow-hidden">
+                            <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                            </div>
+                            <div>
+                            <b>Client Name</b>
+                            <p>Client Position</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex items-center gap-3 mt-5">
-                      <div class="w-10 aspect-square rounded-full overflow-hidden">
-                        <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
-                      </div>
-                      <div>
-                        <b>Client Name</b>
-                        <p>Client Position</p>
-                      </div>
+                    <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between w-[500px] h-full   ">
+                        <div>
+                            <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                            <p class="text-xl font-medium mt-5">"They delivered a full content plan in 3 days — ready to go live instantly."</p>
+                        </div>
+                        <div class="flex items-center gap-3 mt-5">
+                            <div class="w-10 aspect-square rounded-full overflow-hidden">
+                            <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                            </div>
+                            <div>
+                            <b>Client Name</b>
+                            <p>Client Position</p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div aria-hidden class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between  max-w-[500px] w-full flex-shrink-0 testimonial swiper-slide">
-                    <div>
-                      <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
-                      <p class="text-xl font-medium mt-5">"The speed and quality shocked us. It felt like a full agency working overnight."</p>
-                    </div>
-                    <div class="flex items-center gap-3 mt-5">
-                      <div class="w-10 aspect-square rounded-full overflow-hidden">
-                        <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
-                      </div>
-                      <div>
-                        <b>Client Name</b>
-                        <p>Client Position</p>
-                      </div>
-                    </div>
-                  </div>
-              
-                  <div aria-hidden class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between  max-w-[500px] w-full flex-shrink-0 testimonial swiper-slide">
-                    <div>
-                      <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
-                      <p class="text-xl font-medium mt-5">"They delivered a full content plan in 3 days — ready to go live instantly."</p>
-                    </div>
-                    <div class="flex items-center gap-3 mt-5">
-                      <div class="w-10 aspect-square rounded-full overflow-hidden">
-                        <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
-                      </div>
-                      <div>
-                        <b>Client Name</b>
-                        <p>Client Position</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div aria-hidden class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between  max-w-[500px] w-full flex-shrink-0 testimonial swiper-slide">
-                    <div>
-                      <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
-                      <p class="text-xl font-medium mt-5">"The speed and quality shocked us. It felt like a full agency working overnight."</p>
-                    </div>
-                    <div class="flex items-center gap-3 mt-5">
-                      <div class="w-10 aspect-square rounded-full overflow-hidden">
-                        <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
-                      </div>
-                      <div>
-                        <b>Client Name</b>
-                        <p>Client Position</p>
-                      </div>
-                    </div>
-                  </div>
-              
-                  <div aria-hidden class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between  max-w-[500px] w-full flex-shrink-0 testimonial swiper-slide">
-                    <div>
-                      <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
-                      <p class="text-xl font-medium mt-5">"They delivered a full content plan in 3 days — ready to go live instantly."</p>
-                    </div>
-                    <div class="flex items-center gap-3 mt-5">
-                      <div class="w-10 aspect-square rounded-full overflow-hidden">
-                        <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
-                      </div>
-                      <div>
-                        <b>Client Name</b>
-                        <p>Client Position</p>
-                      </div>
-                    </div>
-                  </div>
-  
-              
+                  
+             
+                    
                 </div>
-              </div>
+                <div class="track flex items-center justify-center gap-3">
+                    <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between w-[500px] h-full   ">
+                        <div>
+                            <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                            <p class="text-xl font-medium mt-5">"The speed and quality shocked us. It felt like a full agency working overnight."</p>
+                        </div>
+                        <div class="flex items-center gap-3 mt-5">
+                            <div class="w-10 aspect-square rounded-full overflow-hidden">
+                            <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                            </div>
+                            <div>
+                            <b>Client Name</b>
+                            <p>Client Position</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between w-[500px] h-full   ">
+                        <div>
+                            <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                            <p class="text-xl font-medium mt-5">"They delivered a full content plan in 3 days — ready to go live instantly."</p>
+                        </div>
+                        <div class="flex items-center gap-3 mt-5">
+                            <div class="w-10 aspect-square rounded-full overflow-hidden">
+                            <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                            </div>
+                            <div>
+                            <b>Client Name</b>
+                            <p>Client Position</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between w-[500px] h-full   ">
+                        <div>
+                            <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                            <p class="text-xl font-medium mt-5">"The speed and quality shocked us. It felt like a full agency working overnight."</p>
+                        </div>
+                        <div class="flex items-center gap-3 mt-5">
+                            <div class="w-10 aspect-square rounded-full overflow-hidden">
+                            <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                            </div>
+                            <div>
+                            <b>Client Name</b>
+                            <p>Client Position</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-gray-100 rounded-xl !flex flex-col justify-between w-[500px] h-full   ">
+                        <div>
+                            <span class="text-red-500 text-4xl"><i class="fa-solid fa-quote-left"></i></span>
+                            <p class="text-xl font-medium mt-5">"They delivered a full content plan in 3 days — ready to go live instantly."</p>
+                        </div>
+                        <div class="flex items-center gap-3 mt-5">
+                            <div class="w-10 aspect-square rounded-full overflow-hidden">
+                            <img class="rounded-full w-full h-full object-cover" src="assets/images/Testimonials/avatar.avif" alt="avatar">
+                            </div>
+                            <div>
+                            <b>Client Name</b>
+                            <p>Client Position</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+             
+                    
+                </div>
+               
+                
+                
+            </div>
             </div>
             
             
@@ -784,31 +814,6 @@
     <script src="assets/js/gsap.min.js"></script>
     <script src="assets/js/ScrollTrigger.min.js"></script>
     <script src="assets/js/index.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", () =>{
-      const swiper = new Swiper(".marquee .swiper", {
-        slidesPerView: "2",
-        allowTouchMove: false, // يعطل السحب اليدوي لو مش محتاجه
-        spaceBetween: 12,
-        loop: true,
-        speed: 20000,
 
-        autoplay: {
-          delay: 1,
-          disableOnInteraction: false,
-        },
-        
-        breakpoints:{
-          0: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-          
-        }
-      });
-      console.log("swiper init", swiper);
-
-    })
-      // debug: لو عايز تتأكد إن الانستنس اتعمل
-
-    </script>
   </body>
 </html>

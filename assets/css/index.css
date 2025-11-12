@@ -93,6 +93,15 @@ line-height: 0.8;
     background: linear-gradient(90deg ,#ffffff 0%,transparent 30%);
 
 }
-.swiper-wrapper{
-    transition-timing-function: linear !important;
-}
+
+.track{
+    animation:marquee 10s infinite linear;
+  }
+  @keyframes marquee{
+      0%{
+          transform: translateX(0);
+      }
+      100%{
+          transform: translateX(-100%);
+      }
+  }
