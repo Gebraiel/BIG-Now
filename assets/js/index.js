@@ -29,7 +29,7 @@ thumbnails.forEach((thumb)=>{
 })
 
 //gsap animation 
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger,ScrollSmoother)
 
 const heroTimeLine = gsap.timeline();
 heroTimeLine.from("header",{
@@ -82,4 +82,12 @@ let tl = gsap.timeline({
     duration:0.5,
     stagger:0.2,
     scrollTrigger:".advantage"
+  })
+
+
+  //Smooth Scrolling Options 
+  let smother = ScrollSmoother.create({
+    content:"#smooth-content",
+    smooth:1,
+    smoothTouch:0.2
   })
